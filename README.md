@@ -186,6 +186,40 @@ The application uses GitHub repository search with a creation-date filter and th
 ## Error Handling
 
 The CLI validates user input before making an API request.
+returns an error because the duration must be one of:
+
+day
+week
+month
+year
+
+Invalid limits are also rejected:
+
+trending-repos --limit -5
+
+The application also handles unsuccessful GitHub API responses and displays a clean error message.
+
+Learning Goals
+
+This project was built to practice:
+
+Node.js CLI development
+process.argv
+Command-line argument parsing
+Input validation
+JavaScript modules
+async/await
+Fetch API
+REST APIs
+JSON parsing
+Array methods
+Sorting
+Error handling
+Modular project architecture
+Creating executable Node.js CLI applications
+License
+
+This project is licensed under the ISC License.
 
 For example:
 
